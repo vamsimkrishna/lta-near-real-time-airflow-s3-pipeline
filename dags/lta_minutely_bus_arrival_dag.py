@@ -39,7 +39,7 @@ def lta_minutely_bus_arrival_pipeline():
                 f"Allowed: {COLLECTION_START_DATE} to {COLLECTION_END_DATE}"
             )
 
-        if not (time(5, 0) <= current_time <= time(23, 59)):
+        if not (time(5, 0) <= current_time <= time(23, 59, 59)):
             raise ValueError(
                 f"Outside operating window. Current time: {current_time}. "
                 "Allowed: 05:00 to 23:59 Singapore time."
