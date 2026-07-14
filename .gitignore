@@ -1,0 +1,29 @@
+# Secrets
+.env
+*.pem
+*.key
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Airflow local runtime
+airflow/
+logs/
+*.log
+
+# Generated data
+data/bronze/
+data/silver/
+data/gold/
+data/rejected/
+data/final_reports/
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
